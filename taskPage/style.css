@@ -20,6 +20,10 @@
     background-color: #333;
     color: #fff;
   }
+
+  .logo{
+    margin-left: 40px;
+  }
   
   .logo img {
     max-height: 50px;
@@ -28,6 +32,8 @@
   .profile {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    margin-right: 40px;
   }
   
   .user-pic {
@@ -60,7 +66,8 @@
     border-radius: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);  
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    position: relative;
 }
   
   .title {
@@ -97,6 +104,7 @@
   
   .task-title {
     font-size: 18px;
+    margin-bottom: 10px;
   }
   
   .time, .deadline, .status {
@@ -127,6 +135,20 @@
   .status .not-started {
     color: red;
   }
+
+  .back-link {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    color: #666;
+  }
+  
   
   /* Стили для мобильных устройств */
   @media (max-width: 767px) {
@@ -154,7 +176,6 @@
       margin-top: 10px;
     }
   }
-  
 
   /*footer*/
 
@@ -173,4 +194,11 @@
   .footer-content p {
     margin: 0 10px;
   }
+
   
+  @media screen and (max-width: 768px) {
+    .back2page {
+      position: static;
+      margin-bottom: 20px;
+    }
+  }
