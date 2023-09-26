@@ -1,0 +1,176 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Стили для шапки */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-pic {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .log-out {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+      
+  /* Стили для основного контента */
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);  
+}
+  
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  .task-list {
+    display: grid;
+    
+   
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    
+    gap: 20px;
+  }
+  
+  .task-item {
+    background-color: #f2f2f2;
+    
+    
+    width: 100%;
+    
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);    
+    padding: 20px;  
+
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .task-item:hover {
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+  
+    
+    transform: translateY(-5px)  }
+  
+  .task-title {
+    font-size: 18px;
+  }
+  
+  .time, .deadline, .status {
+    margin-bottom: 10px;
+  }
+  
+  .time span, .deadline span, .status span {
+    font-weight: bold;
+  }
+  
+  .status {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status span {
+    margin-right: 5px;
+  }
+  
+  .status .completed {
+    color: green;
+  }
+  
+  .status .in-progress {
+    color: orange;
+  }
+  
+  .status .not-started {
+    color: red;
+  }
+  
+  /* Стили для мобильных устройств */
+  @media (max-width: 767px) {
+    .task-list {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      gap: 10px;
+    }
+  
+    .task-item {
+      margin-bottom: 10px;
+      padding: 10px;
+      width: calc(100% - 20px);
+    }
+    
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .user-pic {
+      margin-left: 10px;
+    }
+    
+    .log-out {
+      margin-top: 10px;
+    }
+  }
+  
+
+  /*footer*/
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-content p {
+    margin: 0 10px;
+  }
+  

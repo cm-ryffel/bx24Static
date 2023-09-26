@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"></head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="https://static.tildacdn.com/tild3664-3366-4366-b831-363135343061/MozgoLOGO-02.png" alt="MOZGOTEKA-Logo">
+    </div>
+    <div class="profile">
+      <img src="https://i.pinimg.com/736x/7a/2c/28/7a2c2809e99cd04d5a2bd752389d98f0.jpg" alt="Profile Picture" class="user-pic">
+      <div class="profile-info">
+        <button class="log-out">Log Out</button>
+      </div>
+    </div>
+  </header>
+  
+  <main class="main-container">
+    <h1>Добро пожаловать в личный кабинет</h1>
+    
+    <div class="dashboard">
+      <a href="../taskPage/index.html" class="dashboard-item">
+        <h2>Задачи</h2>
+        <p>Просмотреть список задач и создать новую</p>
+      </a>
+      
+      <a href="#" class="dashboard-item" id="tech-support-link">
+        <h2>Часы техподдержки</h2>
+        <p>Просмотреть свой остаток часов техподдержки</p>
+      </a>
+      
+      <a href="#" class="dashboard-item">
+        <h2>База знаний</h2>
+        <p>Просмотреть список статей и ответов на наиболее частые вопросы</p>
+      </a>
+
+      <a href="#" class="dashboard-item">
+        <h2>Счета и Документы</h2>
+        <p>Просмотреть список счетов и документов</p>
+      </a>
+
+      <a href="#" class="dashboard-item">
+        <h2>Пакеты</h2>
+        <p>Просмотреть список Пакетов</p>
+      </a>
+
+      <a href="#" class="dashboard-item">
+        <h2>Внедрение</h2>
+        <p>Просмотреть список проектов внедрения</p>
+      </a>
+
+      <a href="#" class="dashboard-item">
+        <h2>Лицензии</h2>
+        <p>Просмотреть список лицензий и продлить текущую</p>
+      </a>
+    </div>
+
+    <div class="message-box" id="tech-support-message">
+      <p>Ваш остаток часов по пакету ...</p>
+      <button class="close-button" id="tech-support-close">&times;</button>
+    </div>
+
+  </main>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="#" class="footer-link">Написать в поддержку</a>
+      <a href="#" class="footer-link">Мы в 2Гис</a>
+      <a href="#" class="footer-link">Контакты</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
