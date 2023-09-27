@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Ссылка на файл стилей Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tasks.css">
+  <link rel="stylesheet" href="support.css">
+  <title>Document</title>
+</head>
+<body class="bg-light">
+    <!-- <header class="header"> -->
+      <header class="mb-5">
+        <nav class="navbar bg-body-tertiary fixed-top navi">
+          <div class="container-fluid">
+            <div class="logo">
+              <img src="https://static.tildacdn.com/tild3664-3366-4366-b831-363135343061/MozgoLOGO-02.png" alt="MOZGOTEKA-Logo" alt="">
+            </div>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Переключить навигацию">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item w-100">
+                    <div class="nav-elem col bg-secondary text-light rounded">
+                      Задачи
+                  </div>
+                    </li>
+                  <li class="nav-item w-100">
+                    <div class="nav-elem col bg-secondary text-light rounded">
+                      Cчета и документы
+                  </div>
+                    </li>
+                  <li class="nav-item w-100">
+                    <div class="nav-elem col bg-secondary text-light rounded">
+                      Список проектов
+                    </div>
+                  </li>
+                  <li class="nav-item w-100">
+                    <div class="nav-elem col bg-secondary text-light rounded">
+                      Пакеты ТП
+                    </div>
+                  </li>
+                  <li class="nav-item w-100">
+                    <div class="nav-elem col bg-secondary text-light rounded">
+                      Лицензии Битрикс24
+                    </div>
+                  </li>
+                  <li class="nav-item w-100">
+                    <div class="nav-elem col bg-secondary text-light rounded">
+                      FAQ
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+    <main class="d-flex mt-2 mb-2 mx-2">
+        <!-- <div class="menu-nav rounded-4">
+            <div class="navigation container-fluid">
+                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
+                    Задачи
+                </div>
+                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
+                    Cчета и документы
+                </div>
+                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
+                    Список проектов
+                </div>
+                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
+                    Пакеты ТП
+                </div>
+                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
+                    Лицензии Битрикс24
+                </div>
+                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
+                    FAQ
+                </div>
+                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
+                    Ваш пакет часов технической поддержки на сегодня {$time}
+                </div>
+
+            </div>
+        </div> -->
+
+        <div class="menu-container">
+
+            <div id="tasks" class="menu-content">
+                <div class="tasks-container">
+                    <h1 class="title">Мои задачи</h1>
+                
+                    <div class="task-list">
+                      <div class="task-elem">
+                        <h2 class="task-title">Название: Task 1</h2>
+                        <p class="time">Затраченное время: 2 hours</p>
+                        <p class="deadline">Крайний срок: Today</p>
+                        <p class="status">Статус: In Progress</p>
+                      </div>
+                
+                      <div class="task-elem">
+                        <h2 class="task-title">Task 2</h2>
+                        <p class="time">Time: 1 hour</p>
+                        <p class="deadline">Deadline: Tomorrow</p>
+                        <p class="status">Status: Not Started</p>
+                      </div>
+                
+                      <div class="task-elem">
+                        <h2 class="task-title">Task 3</h2>
+                        <p class="time">Time: 3 hours</p>
+                        <p class="deadline">Deadline: Next Week</p>
+                        <p class="status">Status: Not Started</p>
+                      </div>
+                
+                      <div class="task-elem">
+                        <h2 class="task-title">Task 4</h2>
+                        <p class="time">Time: 4 hours</p>
+                        <p class="deadline">Deadline: Next Week</p>
+                        <p class="status">Status: Not Started</p>
+                      </div>
+                
+                      <div class="task-elem">
+                        <h2 class="task-title">Task 5</h2>
+                        <p class="time">Time: 2 hours</p>
+                        <p class="deadline">Deadline: Next Week</p>
+                        <p class="status">Status: Not Started</p>
+                      </div>
+                
+                      <div class="task-elem">
+                        <h2 class="task-title">Task 6</h2>
+                        <p class="time">Time: 1 hour</p>
+                        <p class="deadline">Deadline: Next Week</p>
+                        <p class="status">Status: Not Started</p>
+                      </div>
+                
+                      <div class="task-elem">
+                        <h2 class="task-title">Task 7</h2>
+                        <p class="time">Time: 3 hours</p>
+                        <p class="deadline">Deadline: Next Week</p>
+                        <p class="status">Status: Not Started</p>
+                      </div>
+                
+                      <div class="task-elem">
+                        <h2 class="task-title">Task 8</h2>
+                        <p class="time">Time: 4 hours</p>
+                        <p class="deadline">Deadline: Next Week</p>
+                        <p class="status">Status: Not Started</p>
+                      </div>
+                
+                    </div>    
+                </div>
+            </div>
+              <div id="bills" class="menu-content">
+                <p>Здесь будет контент для раздела "Счета и документы".</p>
+              </div>
+                      
+              <div id="projects" class="menu-content">
+                Здесь будет контент для раздела "Список проектов".
+              </div>
+        
+              <div id="packages" class="menu-content">
+                <div class="support-container">
+                  <h1 class="title">Выберите подходящий тариф</h1>
+                  <div class="dashboard">
+                    <div class="dashboard-item">
+                      <h2>ПОЧАСОВОЙ</h2>
+                      <p>Подойдет, если небольшая компания и в основном справляетесь самостоятельно.</p>
+                    </div>
+                    <div class="dashboard-item" id="tech-support-link">
+                      <h2>ИНДИВИДУАЛЬНЫЙ</h2>
+                      <p>Подойдет, если вам необходим полный спектр услуг по технической поддержке Битрикс 24, адаптированный под уникальные потребности вашего бизнеса.</p>
+                    </div>
+                    <div class="dashboard-item">
+                      <h2>ТАРИФ HELP</h2>
+                      <p>Подойдет для небольших команд до 10 человек на облаке без сложных интеграций. Например, если у вас только отдел продаж, внедрена телефония и простая автоматизация.</p>
+                    </div>
+                    <div class="dashboard-item">
+                      <h2>ТАРИФ SUPPORT</h2>
+                      <p>Подойдет, если Битрикс24 - это инструмент для всей компании и вы используете бизнес-процессы или развиваете функционал</p>
+                    </div>
+                    <div class="dashboard-item">
+                      <h2>ТАРИФ М</h2>
+                      <p>Наш тариф M предлагает полный спектр технической поддержки и интеграции CRM. Наши эксперты помогут вам эффективно внедрить систему CRM и обеспечат надежную поддержку на протяжении всего периода использования.</p>
+                    </div>
+                    <div class="dashboard-item">
+                      <h2>ТАРИФ L</h2>
+                      <p>Тариф L - это расширенная программа технической поддержки и интеграции CRM. Мы предоставляем глубокий анализ вашей бизнес-модели и настраиваем CRM под ваши потребности. Наша команда экспертов всегда готова помочь вам решить любые возникающие вопросы.</p>
+                    </div>
+                    <div class="dashboard-item">
+                      <h2>ТАРИФ XL</h2>
+                      <p>Если вам требуется высококлассная техническая поддержка и сложная интеграция CRM, то наш тариф XL идеально подходит для вас. Мы предоставляем персонального менеджера проекта, который будет следить за вашими потребностями и обеспечивать безупречную работу системы CRM.</p>
+                    </div>
+                    <div class="dashboard-item">
+                      <h2>ТАРИФ XXL</h2>
+                      <p>Наш флагманский тариф XXL предлагает максимальный уровень технической поддержки и интеграции CRM. Мы разработаем индивидуальную стратегию для вашего бизнеса, а также предоставим эксклюзивные решения и высокопрофессиональную поддержку.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                            <div id="licenses" class="menu-content">
+                Здесь будет контент для раздела "Лицензии Битрикс24"
+              </div>
+        
+              <div id="faq" class="menu-content">
+                Здесь будет контент для раздела "FAQ"
+              </div>        
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <a href="#" class="footer-link">Написать в поддержку</a>
+          <a href="#" class="footer-link">Мы в 2Гис</a>
+          <a href="#" class="footer-link">Контакты</a>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+    </body>
+</html>
