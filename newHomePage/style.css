@@ -20,12 +20,6 @@
     margin-right: 40px;
   }
   
-  .user-pic {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
   
   .profile-info {
     display: flex;
@@ -49,6 +43,15 @@
     .logo img {
       max-height: 70px;
     }
+
+    .user-pic {
+      height: 64px;
+      width: 64px;
+      font-size: 64px !important;
+      cursor: pointer;
+    }
+  
+
   /* main styles*/
 
   .menu-nav {
@@ -80,7 +83,7 @@
   .menu-container {
     margin-left: 20px;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }  
 
 
@@ -117,35 +120,6 @@
 
 
       @media screen and (max-width: 768px) {
-        .menu-nav {
-          width: 100%;
-          height: auto;
-          position: static;
-          padding-bottom: 20px;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: center;
-          overflow: auto;
-        }
-      
-        .navigation {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-          overflow: auto;
-          padding: 10px;
-        }
-      
-        .nav-item {
-          width: calc(50% - 20px);
-          margin-bottom: 10px;
-          margin-right: 10px;
-          margin-left: 10px;
-          text-align: center;
-        }
       
         .menu-container {
           margin-left: 0;
@@ -156,16 +130,6 @@
           display: none;
           }
 
-        .hidden{
-          display: block;
-        }
-          
-        .log-out{
-          display: none;
-        }
-        .user-pic{
-          margin-right: 0;
-        }
       }
 
       @media (max-width: 480px) {

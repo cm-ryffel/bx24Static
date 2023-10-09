@@ -1,4 +1,3 @@
-/* общие стили */
 body {
     background-image: url('./img/drib_poses.png');
     background-size: cover;
@@ -17,7 +16,6 @@ body {
     margin-top: 0;
   }
   
-  /* стили для шапки */
   header {
     display: flex;
     justify-content: space-between;
@@ -71,12 +69,10 @@ body {
     border-radius: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
-    /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
     opacity: .9; 
 
   }
 
-  /*стили для основного контента*/
   .dashboard {
     display: flex;
     justify-content: space-between;
@@ -108,7 +104,6 @@ body {
 
 
 
-    /* стили для футера */
     .footer {
       background-color: #333;
       color: #fff;
@@ -137,18 +132,4 @@ body {
     
     .footer-content p {
       margin: 0;
-    }  
-  
-  
-    /* @media screen and (max-width: 768px) {
-      .dashboard-item {
-        flex-basis: calc(50% - 20px);
-      }
     }
-    
-    @media screen and (max-width: 576px) {
-      .dashboard-item {
-        flex-basis: 100%;
-        margin: 10px 0;
-      }
-    } */

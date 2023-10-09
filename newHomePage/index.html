@@ -3,99 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Ссылка на файл стилей Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="tasks.css">
   <link rel="stylesheet" href="support.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
   <title>Document</title>
 </head>
 <body class="bg-light">
-    <!-- <header class="header"> -->
-      <header class="mb-5">
-        <nav class="navbar bg-body-tertiary fixed-top navi">
+      <header class="mb-2 d-flex flex-column">
+        <nav class="navbar navbar-expand-lg bg-secondary text-light">
           <div class="container-fluid">
-            <div class="logo">
-              <img src="https://static.tildacdn.com/tild3664-3366-4366-b831-363135343061/MozgoLOGO-02.png" alt="MOZGOTEKA-Logo" alt="">
-            </div>
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Переключить навигацию">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Переключатель навигации">
               <span class="navbar-toggler-icon"></span>
             </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end">
-                  <li class="nav-item w-100">
-                    <div class="nav-elem col bg-secondary text-light rounded">
-                      Задачи
-                  </div>
-                    </li>
-                  <li class="nav-item w-100">
-                    <div class="nav-elem col bg-secondary text-light rounded">
-                      Cчета и документы
-                  </div>
-                    </li>
-                  <li class="nav-item w-100">
-                    <div class="nav-elem col bg-secondary text-light rounded">
-                      Список проектов
-                    </div>
-                  </li>
-                  <li class="nav-item w-100">
-                    <div class="nav-elem col bg-secondary text-light rounded">
-                      Пакеты ТП
-                    </div>
-                  </li>
-                  <li class="nav-item w-100">
-                    <div class="nav-elem col bg-secondary text-light rounded">
-                      Лицензии Битрикс24
-                    </div>
-                  </li>
-                  <li class="nav-item w-100">
-                    <div class="nav-elem col bg-secondary text-light rounded">
-                      FAQ
-                    </div>
-                  </li>
-                </ul>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
+              <a class="navbar-brand logo" href="#">
+                <img src="https://static.tildacdn.com/tild3664-3366-4366-b831-363135343061/MozgoLOGO-02.png" alt="MOZGOTEKA-Logo" alt="">
+              </a>
+              <ul class="navbar-nav mb-2 mb-lg-0 justify-content-center gap-4">
+                <li class="nav-item h5" id="tasks">
+                  <a class="nav-link active text-light" aria-current="page" href="#">Задачи</a>
+                </li>
+                <li class="nav-item h5" id="bills">
+                  <a class="nav-link text-light" href="#">Cчета и документы</a>
+                </li>
+                <li class="nav-item h5" id="projects">
+                  <a class="nav-link text-light" aria-disabled="true" href="#">Список проектов</a>
+                </li>
+                <li class="nav-item h5" id="packages">
+                  <a class="nav-link text-light" aria-disabled="true" href="#">Пакеты ТП</a>
+                </li>
+                <li class="nav-item h5" id="licenses">
+                  <a class="nav-link text-light" aria-disabled="true" href="#">Лицензии Битрикс24</a>
+                </li>
+                <li class="nav-item h5" id="faq">
+                  <a class="nav-link text-light" aria-disabled="true" href="#">FAQ</a>
+                </li>
+              </ul>
+              <div>
+                <span class="material-symbols-outlined pointer text-light user-pic">
+                  face_6
+                  </span>
               </div>
             </div>
           </div>
-        </nav>
+        </nav>    
       </header>
     
-    <main class="d-flex mt-2 mb-2 mx-2">
-        <!-- <div class="menu-nav rounded-4">
-            <div class="navigation container-fluid">
-                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
-                    Задачи
-                </div>
-                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
-                    Cчета и документы
-                </div>
-                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
-                    Список проектов
-                </div>
-                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
-                    Пакеты ТП
-                </div>
-                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
-                    Лицензии Битрикс24
-                </div>
-                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
-                    FAQ
-                </div>
-                <div class="nav-elem col bg-secondary text-light rounded mb-2 p-4">
-                    Ваш пакет часов технической поддержки на сегодня {$time}
-                </div>
-
-            </div>
-        </div> -->
-
+    <main class="d-flex">
         <div class="menu-container">
-
             <div id="tasks" class="menu-content">
                 <div class="tasks-container">
                     <h1 class="title">Мои задачи</h1>
@@ -207,7 +164,7 @@
                   </div>
                 </div>
               </div>
-                            <div id="licenses" class="menu-content">
+              <div id="licenses" class="menu-content">
                 Здесь будет контент для раздела "Лицензии Битрикс24"
               </div>
         
@@ -219,10 +176,10 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-          <a href="#" class="footer-link">Написать в поддержку</a>
-          <a href="#" class="footer-link">Мы в 2Гис</a>
-          <a href="#" class="footer-link">Контакты</a>
+        <div class="footer-content row">
+          <a href="#" class="footer-link col">Написать в поддержку</a>
+          <a href="#" class="footer-link col">Мы в 2Гис</a>
+          <a href="#" class="footer-link col">Контакты</a>
         </div>
       </footer>
 
