@@ -1,0 +1,11 @@
+.logo img {
+    max-height: 70px;
+  }
+
+  .user-pic {
+    height: 64px;
+    width: 64px;
+    font-size: 64px !important;
+    cursor: pointer;
+  }
+

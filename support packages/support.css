@@ -3,8 +3,8 @@
   margin: 0 auto;
   padding: 20px;
   border-radius: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
   opacity: .9; 
 }

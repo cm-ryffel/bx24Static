@@ -3,79 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="support.css">
+    <link rel="stylesheet" href="../newHomePage/style.css">
+    <link rel="stylesheet" href="../newHomePage/footer.css">
+    <link rel="stylesheet" href="../newHomePage/header.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
+  
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="../homePage/index.html">
-              <img src="https://static.tildacdn.com/tild3664-3366-4366-b831-363135343061/MozgoLOGO-02.png" alt="MOZGOTEKA-Logo">
-            </a>
+  <header class="mb-2 d-flex flex-column">
+    <nav class="navbar navbar-expand-lg bg-secondary text-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
+          <a class="navbar-brand logo" href="#">
+            <img src="https://static.tildacdn.com/tild3664-3366-4366-b831-363135343061/MozgoLOGO-02.png" alt="MOZGOTEKA-Logo" alt="">
+          </a>
+          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-center gap-4">
+            <li class="nav-item h5" id="tasks">
+              <a class="nav-link active text-light" aria-current="page" href="../newHomePage/index.html">Задачи</a>
+            </li>
+            <li class="nav-item h5" id="bills">
+              <a class="nav-link text-light" href="#">Cчета и документы</a>
+            </li>
+            <li class="nav-item h5" id="projects">
+              <a class="nav-link text-light" aria-disabled="true" href="#">Список проектов</a>
+            </li>
+            <li class="nav-item h5" id="packages">
+              <a class="nav-link text-light" aria-disabled="true" href="../support packages/index.html">Пакеты ТП</a>
+            </li>
+            <li class="nav-item h5" id="licenses">
+              <a class="nav-link text-light" aria-disabled="true" href="#">Лицензии Битрикс24</a>
+            </li>
+            <li class="nav-item h5" id="faq">
+              <a class="nav-link text-light" aria-disabled="true" href="#">FAQ</a>
+            </li>
+          </ul>
+          <div>
+            <span class="material-symbols-outlined pointer text-light user-pic">
+              face_6
+              </span>
           </div>
-          <div class="profile">
-            <img src="https://i.pinimg.com/736x/7a/2c/28/7a2c2809e99cd04d5a2bd752389d98f0.jpg" alt="Profile Picture" class="user-pic">
-            <div class="profile-info">
-              <button class="log-out">Log Out</button>
-            </div>
-          </div>        
-    </header>
-
-    <main class="main-container">
-        <h1>Пакеты технической поддержки</h1>
-    
-        <div class="dashboard">
-          <a href="#" class="dashboard-item">
-            <h2>ПОЧАСОВОЙ</h2>
-            <p>Подойдет, если небольшая компания и в основном справляетесь самостоятельно.</p>
-          </a>
-          
-          <a href="#" class="dashboard-item" id="tech-support-link">
-            <h2>ИНДИВИДУАЛЬНЫЙ</h2>
-            <p>Подойдет, если вам необходим полный спектр услуг по технической поддержке Битрикс 24, адаптированный под уникальные потребности вашего бизнеса.</p>
-          </a>
-          
-          <a href="#" class="dashboard-item">
-            <h2>ТАРИФ HELP</h2>
-            <p>Подойдет для небольших команд до 10 человек на облаке без сложных интеграций. Например, если у вас только отдел продаж, внедрена телефония и простая автоматизация.</p>
-          </a>
-    
-          <a href="#" class="dashboard-item">
-            <h2>ТАРИФ SUPPORT</h2>
-            <p>Подойдет, если Битрикс24 - это инструмент для всей компании и вы используете бизнес-процессы или развиваете функционал</p>
-          </a>
-    
-          <a href="#" class="dashboard-item">
-            <h2>ТАРИФ М</h2>
-            <p>Наш тариф M предлагает полный спектр технической поддержки и интеграции CRM. Наши эксперты помогут вам эффективно внедрить систему CRM и обеспечат надежную поддержку на протяжении всего периода использования.</p>
-          </a>
-    
-          <a href="#" class="dashboard-item">
-            <h2>ТАРИФ L</h2>
-            <p>Тариф L - это расширенная программа технической поддержки и интеграции CRM. Мы предоставляем глубокий анализ вашей бизнес-модели и настраиваем CRM под ваши потребности. Наша команда экспертов всегда готова помочь вам решить любые возникающие вопросы.</p>
-          </a>
-    
-          <a href="#" class="dashboard-item">
-            <h2>ТАРИФ XL</h2>
-            <p>Если вам требуется высококлассная техническая поддержка и сложная интеграция CRM, то наш тариф XL идеально подходит для вас. Мы предоставляем персонального менеджера проекта, который будет следить за вашими потребностями и обеспечивать безупречную работу системы CRM.</p>
-          </a>
-
-          <a href="#" class="dashboard-item">
-            <h2>ТАРИФ XXL</h2>
-            <p>Наш флагманский тариф XXL предлагает максимальный уровень технической поддержки и интеграции CRM. Мы разработаем индивидуальную стратегию для вашего бизнеса, а также предоставим эксклюзивные решения и высокопрофессиональную поддержку.</p>
-          </a>
         </div>
-    
+      </div>
+    </nav>    
+  </header>
+
+    <main class="d-flex">
+      <div class="menu-container">
+        <div id="packages" class="menu-content">
+          <div class="support-container">
+            <h1 class="title">Выберите подходящий тариф</h1>
+            <div class="dashboard">
+              <div class="dashboard-item">
+                <h2>ПОЧАСОВОЙ</h2>
+                <p>Подойдет, если небольшая компания и в основном справляетесь самостоятельно.</p>
+              </div>
+              <div class="dashboard-item" id="tech-support-link">
+                <h2>ИНДИВИДУАЛЬНЫЙ</h2>
+                <p>Подойдет, если вам необходим полный спектр услуг по технической поддержке Битрикс 24, адаптированный под уникальные потребности вашего бизнеса.</p>
+              </div>
+              <div class="dashboard-item">
+                <h2>ТАРИФ HELP</h2>
+                <p>Подойдет для небольших команд до 10 человек на облаке без сложных интеграций. Например, если у вас только отдел продаж, внедрена телефония и простая автоматизация.</p>
+              </div>
+              <div class="dashboard-item">
+                <h2>ТАРИФ SUPPORT</h2>
+                <p>Подойдет, если Битрикс24 - это инструмент для всей компании и вы используете бизнес-процессы или развиваете функционал</p>
+              </div>
+              <div class="dashboard-item">
+                <h2>ТАРИФ М</h2>
+                <p>Наш тариф M предлагает полный спектр технической поддержки и интеграции CRM. Наши эксперты помогут вам эффективно внедрить систему CRM и обеспечат надежную поддержку на протяжении всего периода использования.</p>
+              </div>
+              <div class="dashboard-item">
+                <h2>ТАРИФ L</h2>
+                <p>Тариф L - это расширенная программа технической поддержки и интеграции CRM. Мы предоставляем глубокий анализ вашей бизнес-модели и настраиваем CRM под ваши потребности. Наша команда экспертов всегда готова помочь вам решить любые возникающие вопросы.</p>
+              </div>
+              <div class="dashboard-item">
+                <h2>ТАРИФ XL</h2>
+                <p>Если вам требуется высококлассная техническая поддержка и сложная интеграция CRM, то наш тариф XL идеально подходит для вас. Мы предоставляем персонального менеджера проекта, который будет следить за вашими потребностями и обеспечивать безупречную работу системы CRM.</p>
+              </div>
+              <div class="dashboard-item">
+                <h2>ТАРИФ XXL</h2>
+                <p>Наш флагманский тариф XXL предлагает максимальный уровень технической поддержки и интеграции CRM. Мы разработаем индивидуальную стратегию для вашего бизнеса, а также предоставим эксклюзивные решения и высокопрофессиональную поддержку.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <a href="#" class="footer-link">Написать в поддержку</a>
-            <a href="#" class="footer-link">Мы в 2Гис</a>
-            <a href="#" class="footer-link">Контакты</a>
-          </div>      
+      <div class="footer-content row">
+        <a href="#" class="footer-link col">Написать в поддержку</a>
+        <a href="#" class="footer-link col">Мы в 2Гис</a>
+        <a href="#" class="footer-link col">Контакты</a>
+      </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>
