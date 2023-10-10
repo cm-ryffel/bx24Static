@@ -30,7 +30,7 @@
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
-  .task-item:hover {
+  .task-elem:hover {
     box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
   
     
